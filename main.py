@@ -182,7 +182,7 @@ class GameView(arcade.Window):
         if key == arcade.key.ESCAPE:
             self.setup()
 
-        if key == arcade.key.UP or key == arcade.key.W:
+        if key == arcade.key.SPACE  or key == arcade.key.W:
             if self.physics_engine.can_jump():
                 self.player_sprite.change_y = PLAYER_JUMP_SPEED
                 arcade.play_sound(self.jump_sound)
